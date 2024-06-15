@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main()
+{
+    char al[26];
+     char *ptr=al;
+    al[0]='a';
+    int i;
+    for(i=0;i<=26;i++)
+    {
+        al[i]=al[0]+i;
+        
+    }
+    for(i=0;i<=26;i++)
+    {
+        printf("%c",*(ptr+i));
+    }
+}
