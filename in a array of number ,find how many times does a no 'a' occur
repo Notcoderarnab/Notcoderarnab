@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main()
+{
+   int arr[5]={2,3,2,4,2};
+   int i,a,count;
+   count=0;
+   printf("enter the no which is find:\n");
+   scanf("%d",&a);
+   for(i=0;i<=4;i++)
+   {
+       if(arr[i]==a)
+       {
+       count=count+1;
+       }
+   }
+   printf("no occured:%d\t",count);
+    return 0;
+}
