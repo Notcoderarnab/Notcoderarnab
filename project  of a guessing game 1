@@ -1,0 +1,34 @@
+
+#include <stdio.h>
+#include <stdlib.h>
+#include<time.h>
+
+int main() {
+
+   srand(time(NULL));
+
+    int value = (rand() % 100) + 1; // Generate random number in [1, 100]
+    int guessed_number;
+    int guesses=0;
+    
+
+
+    do{
+        printf("gussed number:");
+        scanf("%d",&guessed_number);
+
+    if(guessed_number>value){
+        printf("press lower number\n");
+    }
+    else if(guessed_number<value){
+        printf("press higher number\n");
+    }
+    else{
+        printf("congrats");
+    }
+    guesses++;
+    }while( value!=guessed_number);
+    printf("your guesses number=%d",guesses);
+
+    return 0;
+}
